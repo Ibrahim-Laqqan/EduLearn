@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0 0 8px 0 #00000031;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+h1 {
+  color: black;
+  font-size: 25px;
+  display: block;
+}
+
+nav h1 span {
+  color: blue;
+}
+
+nav ul {
+  display: flex;
+  width: 40%;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+  margin: 15px auto;
+}
+
+nav ul li {
+  display: block;
+  padding: 5px 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+  color: blue;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.home {
+  padding: 60px 0 110px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+
+.home .content {
+  width: 40%;
+}
+
+.home h2 {
+  font-size: 50px;
+}
+
+.home p {
+  color: rgb(57, 57, 57);
+  margin-top: -25px;
+}
+
+.home button {
+  cursor: pointer;
+  padding: 13px 19px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid blue;
+  background-color: blue;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.home button:hover {
+  background-color: transparent;
+  color: blue;
+}
+
+.home .image {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.home .image img {
+  display: block;
+  width: 100%;
+}
+
+.courses h2 {
+  font-size: 35px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards .card {
+  width: 23%;
+  margin: 0 auto 25px;
+  padding: 0 0 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 0 #00000031;
+  transition: all 0.5s ease;
+}
+
+.cards .card:hover {
+  width: 26%;
+}
+
+.cards .card .image img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+
+.cards .card .content {
+  padding: 0 20px;
+}
+
+.cards .card .content h3 {
+  font-size: 22px;
+}
+
+.cards .card .content h4 {
+  color: rgb(115, 115, 115);
+}
+
+.cards .card button {
+  cursor: pointer;
+  padding: 8px 13px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid blue;
+  background-color: blue;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.cards .card button:hover {
+  background-color: transparent;
+  color: blue;
+}
+
+.instructors {
+  display: flex;
+  width: 100%;
+}
+
+.ourInstructors {
+  width: 50%;
+}
+
+.ourInstructors .cards {
+  display: flex;
+}
+
+.instructor {
+  width: 25%;
+  margin: 0 auto;
+}
+
+.instructor .image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.instructor .content h4 {
+  color: rgb(115, 115, 115);
+}
+
+.ourTestimonials {
+  width: 50%;
+}
+
+.ourTestimonials h2 {
+  margin-left: 50px;
+}
+
+.ourTestimonials .cards {
+  display: flex;
+}
+
+.testimonials {
+  width: 25%;
+  margin: 0 auto;
+}
+
+.testimonials .image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.testimonials .content i {
+  color: rgb(255, 213, 0);
+}
+
+.testimonials .content p {
+  color: rgb(115, 115, 115);
+  font-weight: 700;
+}
+
+.about {
+  padding: 60px 0 110px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+
+.about .image {
+  width: 40%;
+}
+
+.about .image img {
+  display: block;
+  width: 100%;
+}
+
+.about .content {
+  margin: 0 auto;
+}
+
+.about .content h2 {
+  font-size: 40px;
+}
+
+.about .content p {
+  margin-bottom: -5px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.799);
+}
+
+.contact {
+  display: flex;
+  padding: 0 0 15px;
+}
+
+.contact .form {
+  width: 40%;
+  border-radius: 5px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: rgb(38, 38, 38);
+}
+
+form input {
+  display: block;
+  margin: 0 0 15px;
+  border: 1px solid rgba(138, 138, 138, 0.474);
+  border-radius: 5px;
+  width: 100%;
+  height: 30px;
+}
+
+form textarea {
+  width: 100%;
+  height: 100px;
+  margin: 0 0 15px;
+  border: 1px solid rgba(138, 138, 138, 0.474);
+  border-radius: 5px;
+}
+
+form button {
+  cursor: pointer;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 6px 0;
+  transition: all 0.5s ease;
+}
+
+form button:hover {
+  background-color: white;
+  color: blue;
+}
+
+.contact .image {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.contact .image img {
+  display: block;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(137, 196, 245, 0.399);
+  box-shadow: 0 0 8px 0 rgba(137, 196, 245, 0.399);
+}
+
+footer h2 span {
+  color: blue;
+}
+
+footer p {
+  font-weight: 300;
+  font-size: 15px;
+  margin: auto 0;
+}
+
+footer .socialMedia {
+  margin: auto 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+footer .socialMedia a {
+  color: rgb(2, 2, 173);
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+footer .socialMedia a:hover {
+  color: rgb(49, 49, 96);
+}
